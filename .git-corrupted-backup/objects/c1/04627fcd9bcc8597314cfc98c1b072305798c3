@@ -1,0 +1,48 @@
+  readonly 'scroll-ps': readonly [(value: string) => boolean, (value: string) => boolean, ThemeGetter];
+        }];
+        /**
+         * Scroll Padding Inline End
+         * @see https://tailwindcss.com/docs/scroll-padding
+         */
+        readonly 'scroll-pe': readonly [{
+            readonly 'scroll-pe': readonly [(value: string) => boolean, (value: string) => boolean, ThemeGetter];
+        }];
+        /**
+         * Scroll Padding Block Start
+         * @see https://tailwindcss.com/docs/scroll-padding
+         */
+        readonly 'scroll-pbs': readonly [{
+            readonly 'scroll-pbs': readonly [(value: string) => boolean, (value: string) => boolean, ThemeGetter];
+        }];
+        /**
+         * Scroll Padding Block End
+         * @see https://tailwindcss.com/docs/scroll-padding
+         */
+        readonly 'scroll-pbe': readonly [{
+            readonly 'scroll-pbe': readonly [(value: string) => boolean, (value: string) => boolean, ThemeGetter];
+        }];
+        /**
+         * Scroll Padding Top
+         * @see https://tailwindcss.com/docs/scroll-padding
+         */
+        readonly 'scroll-pt': readonly [{
+            readonly 'scroll-pt': readonly [(value: string) => boolean, (value: string) => boolean, ThemeGetter];
+        }];
+        /**
+         * Scroll Padding Right
+         * @see https://tailwindcss.com/docs/scroll-padding
+         */
+        readonly 'scroll-pr': readonly [{
+            readonly 'scroll-pr': readonly [(value: string) => boolean, (value: string) => boolean, ThemeGetter];
+        }];
+        /**
+         * Scroll Padding Bottom
+         * @see https://tailwindcss.com/docs/scroll-padding
+         */
+        readonly 'scroll-pb': readonly [{
+            readonly 'scroll-pb': readonly [(value: string) => boolean, (value: string) => boolean, ThemeGetter];
+        }];
+        /**
+         * Scroll Padding Left
+         * @see https://tailwindcss.com/docs/scroll-padding
+      

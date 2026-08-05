@@ -1,0 +1,17 @@
+Quality = "high" | "low" | "medium";
+type KeyFormat = "jwk" | "pkcs8" | "raw" | "spki";
+type KeyType = "private" | "public" | "secret";
+type KeyUsage = "decrypt" | "deriveBits" | "deriveKey" | "encrypt" | "sign" | "unwrapKey" | "verify" | "wrapKey";
+type LatencyMode = "quality" | "realtime";
+type LockMode = "exclusive" | "shared";
+type MediaDecodingType = "file" | "media-source" | "webrtc";
+type MediaEncodingType = "record" | "webrtc";
+type MediaKeysRequirement = "not-allowed" | "optional" | "required";
+type NotificationDirection = "auto" | "ltr" | "rtl";
+type NotificationPermission = "default" | "denied" | "granted";
+type OffscreenRenderingContextId = "2d" | "bitmaprenderer" | "webgl" | "webgl2" | "webgpu";
+type OpusBitstreamFormat = "ogg" | "opus";
+type PermissionName = "camera" | "geolocation" | "microphone" | "midi" | "notifications" | "persistent-storage" | "push" | "screen-wake-lock" | "storage-access";
+type PermissionState = "denied" | "granted" | "prompt";
+type PredefinedColorSpace = "display-p3" | "srgb";
+typ

@@ -1,0 +1,27 @@
+{
+  "name": "sack3d-server",
+  "version": "1.0.0",
+  "description": "SACK3D auth backend",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.6.0",
+    "express-validator": "^7.3.2",
+    "helmet": "7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.2.0",
+    "mysql2": "^3.9.7",
+    "nodemailer": "^9.0.3",
+    "pg": "^8.22.0",
+    "uuid": "9.0.1"
+  }
+}

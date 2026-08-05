@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 24 95% 53%;
+    --surface: 0 0% 7%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #0a0a0a; */
+  color: #e5e7eb;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-primary {
+    color: hsl(var(--primary));
+  }
+
+  .bg-primary\/20 {
+    background-color: hsl(var(--primary) / .2);
+  }
+
+  .border-primary\/40 {
+    border-color: hsl(var(--primary) / .4);
+  }
+
+  .from-surface\/95 {
+    --tw-gradient-from: hsl(var(--surface) / .95) var(--tw-gradient-from-position);
+    --tw-gradient-to: hsl(var(--surface) / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .via-surface\/85 {
+    --tw-gradient-to: hsl(var(--surface) / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), hsl(var(--surface) / .85) var(--tw-gradient-via-position), var(--tw-gradient-to);
+  }
+
+  .to-primary\/40 {
+    --tw-gradient-to: hsl(var(--primary) / .4) var(--tw-gradient-to-position);
+  }
+}
+
+@layer components {
+  .badge {
+    @apply inline-flex items-center gap-1.5 text-xs font-mono font-medium tracking-widest uppercase px-3 py-1 rounded-full border border-orange-500/30 text-orange-400 bg-orange-500/5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-400 text-black font-semibold text-sm rounded-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-white/20 hover:border-white/40 text-white font-medium text-sm rounded-lg transition-all duration-200 hover:bg-white/5;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 text-sm text-gray-400 hover:text-white font-medium transition-colors duration-200 underline-offset-4 hover:underline;
+  }
+
+  .section-label {
+    @apply text-xs font-mono font-medium tracking-[0.25em] uppercase text-orange-400;
+  }
+
+  .card-dark {
+    @apply bg-[#161616] border border-[#2a2a2a] rounded-2xl overflow-hidden;
+  }
+
+  .stat-item {
+    @apply flex flex-col items-center gap-1 text-center;
+  }
+}

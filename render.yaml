@@ -1,0 +1,42 @@
+services:
+  # Backend API Service
+  - type: web
+    name: sack3d-api
+    runtime: node
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd server && npm install && node deploy-migrate.js
+    startCommand: cd server && node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: DATABASE_URL
+        fromDatabase:
+          name: sack3d-db
+          property: connectionString
+    healthCheckPath: /api/health
+
+  # Frontend Service
+  - type: web
+    name: sack3d-frontend
+    runtime: static
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://sack3d-api.onrender.com
+
+# Database
+databases:
+  - name: sack3d-db
+    databaseName: sack3d
+    plan: free
