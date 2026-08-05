@@ -11,7 +11,7 @@ export default function Hero() {
           className="w-full h-full object-cover object-center"
           loading="eager"
           decoding="async"
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[hsl(0_0%_7%/0.95)] via-[hsl(0_0%_7%/0.80)] to-[hsl(var(--primary)/0.30)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(var(--primary)/0.25),transparent_60%)]" />

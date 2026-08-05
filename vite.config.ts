@@ -28,9 +28,5 @@ export default defineConfig({
   // Optimize dependencies
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom', 'axios']
-  },
-  // Enable compression
-  server: {
-    compress: true
   }
 })
